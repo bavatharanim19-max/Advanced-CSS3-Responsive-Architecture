@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #12372a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #a8e6cf;
+}
+
+.hero {
+    min-height: 75vh;
+    padding: 60px 8%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #d9f3e4, #ffffff);
+}
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #12372a;
+}
+
+.hero p {
+    margin: 15px 0 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #12372a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #27865c;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 55px 8%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000020;
+}
+
+.card h3 {
+    color: #27865c;
+    margin-bottom: 10px;
+}
+
+.skills {
+    text-align: center;
+    word-spacing: 12px;
+}
+
+footer {
+    background: #12372a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div>
+        <h2>Hello, I'm a Student</h2>
+        <p>Creative Learner | Web Developer | Programmer</p>
+        <a href="#projects" class="btn">Explore Projects</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>
+            I am a computer science student interested in
+            web development, programming and modern technology.
+            I enjoy learning new skills and building creative projects.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+    <div class="skills">
+        HTML CSS JavaScript Python Java
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal website using HTML and CSS.</p>
+        </article>
+
+        <article class="card">
+            <h3>Vulnerability Scanner</h3>
+            <p>A Python project that checks basic website security headers.</p>
+        </article>
+
+        <article class="card">
+            <h3>UseBack</h3>
+            <p>A platform concept for reusing unused items.</p>
+        </article>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align:center">
+        Email: student@example.com
+    </p>
+</section>
+</main>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
